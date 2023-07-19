@@ -21,6 +21,11 @@ google:
   - modules/google/fontapiparser.js
   - modules/google/googlefontapi.js
 
+bunny:
+  - modules/bunny/fontapiurlbuilder.js
+  - modules/bunny/fontapiparser.js
+  - modules/bunny/bunnyfontapi.js>
+
 fontdeck:
   - modules/fontdeck.js
 
