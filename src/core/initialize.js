@@ -34,6 +34,11 @@ var INCLUDE_TYPEKIT_MODULE = false;
 var INCLUDE_GOOGLE_MODULE = false;
 
 /**
+ * @define {boolean}
+ */
+var INCLUDE_BUNNY_MODULE = false;
+
+/**
  * @define {string}
  */
 var WEBFONT = 'WebFont';
@@ -75,6 +80,12 @@ if (INCLUDE_TYPEKIT_MODULE) {
 if (INCLUDE_GOOGLE_MODULE) {
   webFontLoader.addModule(webfont.modules.google.GoogleFontApi.NAME, function (configuration, domHelper) {
     return new webfont.modules.google.GoogleFontApi(domHelper, configuration);
+  });
+}
+
+if (INCLUDE_BUNNY_MODULE) {
+  webFontLoader.addModule(webfont.modules.bunny.BunnyFontApi.NAME, function (configuration, domHelper) {
+    return new webfont.modules.bunny.BunnyFontApi(domHelper, configuration);
   });
 }
 
