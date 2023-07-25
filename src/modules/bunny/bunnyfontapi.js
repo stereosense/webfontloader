@@ -18,7 +18,7 @@ webfont.modules.bunny.BunnyFontApi = function(domHelper, configuration) {
  * @const
  * @type {string}
  */
-webfont.modules.bunny.BunnyFontApi.NAME = 'bunny';
+webfont.modules.bunny.BunnyFontApi.NAME = 'bunnyfonts';
 
 goog.scope(function () {
   var BunnyFontApi = webfont.modules.bunny.BunnyFontApi,
